@@ -14,5 +14,5 @@ Funcionalidade: Fazer Login
     Então a resposta e "<mensagem>"
 
     Exemplos:
-      | email                | senha  | mensagem                                                                    |
-      |                      |        | Please fill out this field.                                                 |
+      | email                | senha           | mensagem                                                                    |
+      |                      |                 | Please fill out this field.                                                |

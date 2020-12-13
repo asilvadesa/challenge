@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4637000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 7,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 5493000000,
+              "duration": 5588000000,
               "status": "passed"
             },
             "line": 8,
@@ -42,7 +42,18 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-13T03:31:37.453Z",
+        "start_timestamp": "2020-12-13T12:55:37.794Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8307000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
         "line": 18,
         "name": "Devo validar regras de login",
         "description": "",
@@ -52,7 +63,7 @@
         "steps": [
           {
             "result": {
-              "duration": 113000000,
+              "duration": 97000000,
               "status": "passed"
             },
             "line": 11,
@@ -70,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 118000000,
+              "duration": 131000000,
               "status": "passed"
             },
             "line": 12,
@@ -88,7 +99,7 @@
           },
           {
             "result": {
-              "duration": 168000000,
+              "duration": 195000000,
               "status": "passed"
             },
             "line": 13,
@@ -100,7 +111,7 @@
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 14,
