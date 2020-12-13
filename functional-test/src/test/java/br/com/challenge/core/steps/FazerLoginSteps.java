@@ -1,6 +1,7 @@
 package br.com.challenge.core.steps;
 
 import br.com.challenge.core.pageobjects.LoginPageObject;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
@@ -45,5 +46,10 @@ public class FazerLoginSteps {
     @Então("a resposta e {string}")
     public void aRespostaE(String mensagem) {
         Assert.assertEquals(mensagem, loginPageObject.pegaMensagem());
+    }
+
+    @After
+    public void fecharBrowser(){
+        driver.close();
     }
 }
