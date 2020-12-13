@@ -1,0 +1,128 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação(FazerLoginSteps.java:9)\r\n\tat ✽.que desejo acessar a apliacação(file:///C:/Users/Agata/Dev/test/qa-challenge-hostgator/functional-test/src/test/java/br/com/challenge/core/features/fazer_login.feature:7)\r\n",
+              "duration": 8000000,
+              "status": "pending"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-13T03:09:14.002Z",
+        "line": 18,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "que informo a conta \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "que informo senha \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "selecio a opção salvar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.selecioAOpçãoSalvar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "a resposta é \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaÉ(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Fazer Login",
+    "description": "  Como um usuario\n  Gostaria de fazer o login no aplicação",
+    "id": "fazer-login",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/br/com/challenge/core/features/fazer_login.feature",
+    "tags": []
+  }
+]
