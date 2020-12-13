@@ -14,5 +14,10 @@ Funcionalidade: Fazer Login
     Então a resposta e "<mensagem>"
 
     Exemplos:
-      | email                | senha           | mensagem                                                                    |
-      |                      |                 | Please fill out this field.                                                |
+      | email                |      senha      | mensagem                                                                    |
+      |                      |                 | Please fill out this field.                                                 |
+      |    a                 |                 | Please include an '@' in the email address. 'a' is missing an '@'.          |
+      |    a@                |                 | Please enter a part following '@'. 'a@' is incomplete.          |
+      |    a@@               |                 | A part following '@' should not contain the symbol '@'.          |
+      |    a@A               |                 | Please fill out this field.          |
+ #     |    a@A               |      1          | Please fill out this field.          |
