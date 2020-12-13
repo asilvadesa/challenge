@@ -39,8 +39,8 @@ public class FazerLoginSteps {
     public void queInformoSenha(String password) {
         loginPageObject.setCampoSenha(password);
     }
-    @Quando("clico em salvar")
-    public void clicloEmSalvar() {
+    @Quando("clico em entrar")
+    public void clicloEmEntrar() {
        loginPageObject.salvar();
     }
     @Então("a resposta e {string}")

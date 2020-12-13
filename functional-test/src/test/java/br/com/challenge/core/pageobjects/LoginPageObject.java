@@ -64,5 +64,4 @@ public class LoginPageObject {
         return  (Boolean) js.executeScript("return arguments[0].checkValidity();", campoSenha);
     }
 
-
 }
