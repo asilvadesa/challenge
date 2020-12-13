@@ -51,15 +51,17 @@ public class LoginPageObject {
         if (!emailEhValido()){
            return (String)js.executeScript("return arguments[0].validationMessage;", campoEmail);
 
-        }else if(tamanhoDaSenha < 5){
+        }else if(!senhaEhValido()){
            return (String)js.executeScript("return arguments[0].validationMessage;", campoSenha);
-
         }
         return driver.findElement(By.tagName("span")).getText();
     }
 
     private Boolean emailEhValido() {
         return  (Boolean) js.executeScript("return arguments[0].checkValidity();", campoEmail);
+    }
+    private Boolean senhaEhValido() {
+        return  (Boolean) js.executeScript("return arguments[0].checkValidity();", campoSenha);
     }
 
 
