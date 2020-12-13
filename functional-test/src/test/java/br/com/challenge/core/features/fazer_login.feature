@@ -14,10 +14,12 @@ Funcionalidade: Fazer Login
     Então a resposta e "<mensagem>"
 
     Exemplos:
-      | email                |      senha      | mensagem                                                                    |
-      |                      |                 | Please fill out this field.                                                 |
-      |    a                 |                 | Please include an '@' in the email address. 'a' is missing an '@'.          |
-      |    a@                |                 | Please enter a part following '@'. 'a@' is incomplete.          |
-      |    a@@               |                 | A part following '@' should not contain the symbol '@'.          |
-      |    a@A               |                 | Please fill out this field.          |
- #     |    a@A               |      1          | Please fill out this field.          |
+      | email                |      senha      | mensagem                                                                                  |
+      |                      |                 | Please fill out this field.                                                               |
+      |    a                 |                 | Please include an '@' in the email address. 'a' is missing an '@'.                        |
+      |    a@                |                 | Please enter a part following '@'. 'a@' is incomplete.                                    |
+      |    a@@               |                 | A part following '@' should not contain the symbol '@'.                                   |
+      |    a@A               |                 | Please fill out this field.                                                               |
+      |    a@A               |      1          | Please lengthen this text to 5 characters or more (you are currently using 1 character).  |
+      |    a@A               |      1234       | Please lengthen this text to 5 characters or more (you are currently using 4 characters). |
+      |    a@A               |      12345      | Confirme que você não é um robô clicando no reCaptcha abaixo                              |
