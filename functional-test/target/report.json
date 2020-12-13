@@ -11,9 +11,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação(FazerLoginSteps.java:9)\r\n\tat ✽.que desejo acessar a apliacação(file:///C:/Users/Agata/Dev/test/qa-challenge-hostgator/functional-test/src/test/java/br/com/challenge/core/features/fazer_login.feature:7)\r\n",
-              "duration": 8000000,
-              "status": "pending"
+              "duration": 4637000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "que desejo acessar a apliacação",
@@ -24,7 +23,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5493000000,
+              "status": "passed"
             },
             "line": 8,
             "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
@@ -42,7 +42,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-13T03:09:14.002Z",
+        "start_timestamp": "2020-12-13T03:31:37.453Z",
         "line": 18,
         "name": "Devo validar regras de login",
         "description": "",
@@ -52,8 +52,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 113000000,
+              "status": "passed"
             },
             "line": 11,
             "name": "que informo a conta \"\"",
@@ -70,8 +70,8 @@
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 118000000,
+              "status": "passed"
             },
             "line": 12,
             "name": "que informo senha \"\"",
@@ -88,22 +88,23 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 168000000,
+              "status": "passed"
             },
             "line": 13,
-            "name": "selecio a opção salvar",
+            "name": "clico em salvar",
             "match": {
-              "location": "br.com.challenge.core.steps.FazerLoginSteps.selecioAOpçãoSalvar()"
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmSalvar()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 25000000,
+              "status": "passed"
             },
             "line": 14,
-            "name": "a resposta é \"Please fill out this field.\"",
+            "name": "a resposta e \"Please fill out this field.\"",
             "match": {
               "arguments": [
                 {
@@ -111,7 +112,7 @@
                   "offset": 13
                 }
               ],
-              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaÉ(java.lang.String)"
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
             },
             "keyword": "Então "
           }

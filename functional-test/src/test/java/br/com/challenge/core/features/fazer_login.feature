@@ -10,8 +10,8 @@ Funcionalidade: Fazer Login
   Esquema do Cenario: Devo validar regras de login
     Dado que informo a conta "<email>"
     E que informo senha "<senha>"
-    Quando selecio a opção salvar
-    Então a resposta é "<mensagem>"
+    Quando clico em salvar
+    Então a resposta e "<mensagem>"
 
     Exemplos:
       | email                | senha  | mensagem                                                                    |

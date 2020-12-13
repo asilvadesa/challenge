@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         glue = "br.com.challenge.core.steps",
         plugin = {"pretty","html:target/report-html", "json:target/report.json"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        publish = true
+        publish = true,
+        dryRun = false
 )
 public class LoginRunner {
 
