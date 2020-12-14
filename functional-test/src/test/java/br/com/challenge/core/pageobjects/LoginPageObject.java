@@ -14,6 +14,7 @@ public class LoginPageObject {
     private WebElement campoSenha;
     private WebElement botaoSalvar;
     private WebElement linkEsqueceuSenha;
+    private WebElement linkBaseConhecimento;
 
 
     public LoginPageObject(WebDriver driver) {
@@ -32,6 +33,7 @@ public class LoginPageObject {
         campoSenha = driver.findElement(By.name("password"));
         botaoSalvar =  driver.findElement(By.tagName("button"));
         linkEsqueceuSenha = driver.findElement(By.className("forgot-link"));
+        linkBaseConhecimento = driver.findElement(By.className("login-block"));
     }
 
     public void setCampoEmail(String email) {
@@ -64,5 +66,9 @@ public class LoginPageObject {
 
     public void cliqueEsqueceuSenha() {
         linkEsqueceuSenha.click();
+    }
+
+    public void cliqueBaseConhecimento() {
+        linkBaseConhecimento.click();
     }
 }
