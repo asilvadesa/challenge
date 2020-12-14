@@ -18,11 +18,13 @@ public class FazerLoginSteps {
 
     @Before
     public void setUp(){
-        driver = new ChromeDriver();
+
     }
 
     @Dado("que desejo acessar a apliacação")
+
     public void queDesejoAcessarAApliacação() {
+        driver = new ChromeDriver();
         loginPageObject = new LoginPageObject(driver);
     }
 
@@ -45,11 +47,11 @@ public class FazerLoginSteps {
     }
     @Então("a resposta e {string}")
     public void aRespostaE(String mensagem) {
-        Assert.assertEquals(mensagem, loginPageObject.pegaMensagem());
+        try{
+            Assert.assertEquals(mensagem, loginPageObject.pegaMensagem());
+        }finally {
+            driver.close();
+        }
     }
 
-    @After
-    public void fecharBrowser(){
-        driver.close();
-    }
 }
