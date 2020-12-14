@@ -13,8 +13,8 @@ public class LoginPageObject {
     private WebElement campoEmail;
     private WebElement campoSenha;
     private WebElement botaoSalvar;
+    private WebElement linkEsqueceuSenha;
 
-    private Integer tamanhoDaSenha;
 
     public LoginPageObject(WebDriver driver) {
         this.driver = driver;
@@ -31,6 +31,7 @@ public class LoginPageObject {
         campoEmail = driver.findElement(By.name("email"));
         campoSenha = driver.findElement(By.name("password"));
         botaoSalvar =  driver.findElement(By.tagName("button"));
+        linkEsqueceuSenha = driver.findElement(By.className("forgot-link"));
     }
 
     public void setCampoEmail(String email) {
@@ -39,7 +40,6 @@ public class LoginPageObject {
 
     public void setCampoSenha(String senha) {
         campoSenha.sendKeys(senha);
-        tamanhoDaSenha = senha.length();
     }
 
     public void salvar() {
@@ -48,20 +48,21 @@ public class LoginPageObject {
 
     public String pegaMensagem(){
         buscaElementos();
-        if (!emailEhValido()){
+        if (!ehValido(campoEmail)){
            return (String)js.executeScript("return arguments[0].validationMessage;", campoEmail);
 
-        }else if(!senhaEhValido()){
+        }else if(!ehValido(campoSenha)){
            return (String)js.executeScript("return arguments[0].validationMessage;", campoSenha);
         }
         return driver.findElement(By.tagName("span")).getText();
     }
 
-    private Boolean emailEhValido() {
-        return  (Boolean) js.executeScript("return arguments[0].checkValidity();", campoEmail);
-    }
-    private Boolean senhaEhValido() {
-        return  (Boolean) js.executeScript("return arguments[0].checkValidity();", campoSenha);
+    private Boolean ehValido(WebElement element){
+        return  (Boolean) js.executeScript("return arguments[0].checkValidity();", element);
     }
 
+
+    public void cliqueEsqueceuSenha() {
+        linkEsqueceuSenha.click();
+    }
 }
