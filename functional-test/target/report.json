@@ -3,6 +3,168 @@
     "line": 2,
     "elements": [
       {
+        "start_timestamp": "2020-12-14T02:45:12.586Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Acessar base de conhecimento com sucesso",
+        "description": "",
+        "id": "acessar-base-de-conhecimento;acessar-base-de-conhecimento-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20085000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que desejoa cessar a url \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.challenge.core.steps.BaseConhecimento.queDesejoaCessarAUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clico em acessar agora",
+            "match": {
+              "location": "br.com.challenge.core.steps.BaseConhecimento.clicoEmAcessarAgora()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 4675000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "abre outra aba do navegador com o titulo \"Suporte HostGator\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Suporte HostGator\"",
+                  "offset": 41
+                }
+              ],
+              "location": "br.com.challenge.core.steps.BaseConhecimento.abreOutraAbaDoNavegadorComOTitulo(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Acessar Base de Conhecimento",
+    "description": "  Como usuario\n  Gostaria de acessar Base de Conhecimento",
+    "id": "acessar-base-de-conhecimento",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/br/com/challenge/core/features/acessar_base_conhecimento.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-14T02:45:37.700Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Acessar esqueceu a senha com sucesso",
+        "description": "",
+        "id": "acessar-esqueceu-a-senha;acessar-esqueceu-a-senha-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16695000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que desejo acessar a apliacação na url \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 39
+                }
+              ],
+              "location": "br.com.challenge.core.steps.EsqueceuSenhaSteps.queDesejoAcessarAApliacaçãoNaUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2779000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clico em esqueceu a senha",
+            "match": {
+              "location": "br.com.challenge.core.steps.EsqueceuSenhaSteps.clicoEmEsqueceuASenha()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "sou redirecionado para pagina de esqueceu a senha que possui titulo \"Redefinição de senha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Redefinição de senha\"",
+                  "offset": 68
+                }
+              ],
+              "location": "br.com.challenge.core.steps.EsqueceuSenhaSteps.souRedirecionadoParaPaginaDeEsqueceuASenhaQuePossuiTitulo(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Acessar Esqueceu a Senha",
+    "description": "    Como usuario\n    Gostaria de acessar a opção esqueceu a senha",
+    "id": "acessar-esqueceu-a-senha",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/br/com/challenge/core/features/acessar_esqueceu_senha.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
         "line": 6,
         "name": "",
         "description": "",
@@ -11,7 +173,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 3424000000,
               "status": "passed"
             },
             "line": 7,
@@ -23,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 5588000000,
+              "duration": 6895000000,
               "status": "passed"
             },
             "line": 8,
@@ -42,11 +204,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-13T12:55:37.794Z",
+        "start_timestamp": "2020-12-14T02:45:57.342Z",
         "before": [
           {
             "result": {
-              "duration": 8307000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -63,7 +225,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97000000,
+              "duration": 99000000,
               "status": "passed"
             },
             "line": 11,
@@ -81,7 +243,7 @@
           },
           {
             "result": {
-              "duration": 131000000,
+              "duration": 94000000,
               "status": "passed"
             },
             "line": 12,
@@ -99,19 +261,19 @@
           },
           {
             "result": {
-              "duration": 195000000,
+              "duration": 82000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "clico em salvar",
+            "name": "clico em entrar",
             "match": {
-              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmSalvar()"
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 80000000,
+              "duration": 209000000,
               "status": "passed"
             },
             "line": 14,
@@ -120,6 +282,891 @@
               "arguments": [
                 {
                   "val": "\"Please fill out this field.\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3728000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 6522000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-14T02:46:08.185Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que informo a conta \"a\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que informo senha \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em entrar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 284000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a resposta e \"Please include an \u0027@\u0027 in the email address. \u0027a\u0027 is missing an \u0027@\u0027.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please include an \u0027@\u0027 in the email address. \u0027a\u0027 is missing an \u0027@\u0027.\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3525000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 4379000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-14T02:46:19.056Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que informo a conta \"a@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 126000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que informo senha \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em entrar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 264000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a resposta e \"Please enter a part following \u0027@\u0027. \u0027a@\u0027 is incomplete.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter a part following \u0027@\u0027. \u0027a@\u0027 is incomplete.\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3399000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5544000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-14T02:46:27.620Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;5",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que informo a conta \"a@@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@@\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que informo senha \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em entrar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a resposta e \"A part following \u0027@\u0027 should not contain the symbol \u0027@\u0027.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A part following \u0027@\u0027 should not contain the symbol \u0027@\u0027.\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3437000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5709000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-14T02:46:37.230Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;6",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que informo a conta \"a@A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@A\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que informo senha \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em entrar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 256000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a resposta e \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3235000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5289000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-14T02:46:46.968Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;7",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que informo a conta \"a@A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@A\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que informo senha \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3024000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em entrar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 282000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a resposta e \"Please lengthen this text to 5 characters or more (you are currently using 1 character).\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please lengthen this text to 5 characters or more (you are currently using 1 character).\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3340000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5005000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-14T02:46:58.959Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;8",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que informo a conta \"a@A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@A\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que informo senha \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em entrar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 307000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a resposta e \"Please lengthen this text to 5 characters or more (you are currently using 4 characters).\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please lengthen this text to 5 characters or more (you are currently using 4 characters).\"",
+                  "offset": 13
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(java.lang.String)"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3382000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que desejo acessar a apliacação",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queDesejoAcessarAApliacação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5087000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acessar o endereço \"https://financeiro.hostgator.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://financeiro.hostgator.com.br/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.acessarOEndereço(java.lang.String)"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-14T02:47:08.044Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Devo validar regras de login",
+        "description": "",
+        "id": "fazer-login;devo-validar-regras-de-login;;9",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que informo a conta \"a@A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@A\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoAConta(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 112000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que informo senha \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.queInformoSenha(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3021000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em entrar",
+            "match": {
+              "location": "br.com.challenge.core.steps.FazerLoginSteps.clicloEmEntrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Confirme que você não é um robô clicando no reCaptcha abaixo]\u003e but was:\u003c[Please fill out this field.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat br.com.challenge.core.steps.FazerLoginSteps.aRespostaE(FazerLoginSteps.java:51)\r\n\tat ✽.a resposta e \"Confirme que você não é um robô clicando no reCaptcha abaixo\"(file:///C:/Users/Agata/Dev/test/qa-challenge-hostgator/functional-test/src/test/java/br/com/challenge/core/features/fazer_login.feature:14)\r\n",
+              "duration": 211000000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "a resposta e \"Confirme que você não é um robô clicando no reCaptcha abaixo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Confirme que você não é um robô clicando no reCaptcha abaixo\"",
                   "offset": 13
                 }
               ],
