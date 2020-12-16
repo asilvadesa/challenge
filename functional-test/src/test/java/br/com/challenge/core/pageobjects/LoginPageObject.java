@@ -15,6 +15,7 @@ public class LoginPageObject {
     private WebElement botaoSalvar;
     private WebElement linkEsqueceuSenha;
     private WebElement linkBaseConhecimento;
+    private Integer tamanhoSenha;
 
 
     public LoginPageObject(WebDriver driver) {
@@ -42,6 +43,7 @@ public class LoginPageObject {
 
     public void setCampoSenha(String senha) {
         campoSenha.sendKeys(senha);
+        tamanhoSenha = senha.length();
     }
 
     public void salvar() {
@@ -53,7 +55,7 @@ public class LoginPageObject {
         if (!ehValido(campoEmail)){
            return (String)js.executeScript("return arguments[0].validationMessage;", campoEmail);
 
-        }else if(!ehValido(campoSenha)){
+        }else if(!ehValido(campoSenha) && tamanhoSenha < 5){
            return (String)js.executeScript("return arguments[0].validationMessage;", campoSenha);
         }
         return driver.findElement(By.tagName("span")).getText();

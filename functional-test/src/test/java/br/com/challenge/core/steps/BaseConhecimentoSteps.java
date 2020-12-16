@@ -1,6 +1,7 @@
 package br.com.challenge.core.steps;
 
 import br.com.challenge.core.pageobjects.LoginPageObject;
+import io.cucumber.java.After;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import org.junit.Assert;
@@ -10,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BaseConhecimento {
+public class BaseConhecimentoSteps {
     private WebDriver driver;
     private LoginPageObject loginPageObject;
 
@@ -29,13 +30,12 @@ public class BaseConhecimento {
     public void abreOutraAbaDoNavegadorComOTitulo(String tituloEsperado) {
         List<String> abas = new ArrayList<>(driver.getWindowHandles());
         String tituloBrowser = driver.switchTo().window(abas.get(1)).getTitle();
-        try {
-            Assert.assertEquals(tituloEsperado, tituloBrowser );
-        }finally {
-            driver.close();
-        }
+        Assert.assertEquals(tituloEsperado, tituloBrowser );
+
     }
 
-
-
+    @After
+    public void fechaBrowser(){
+        driver.quit();
+    }
 }
