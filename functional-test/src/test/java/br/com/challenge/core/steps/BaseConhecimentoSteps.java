@@ -1,7 +1,6 @@
 package br.com.challenge.core.steps;
 
 import br.com.challenge.core.pageobjects.LoginPageObject;
-import io.cucumber.java.After;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import org.junit.Assert;
@@ -30,12 +29,10 @@ public class BaseConhecimentoSteps {
     public void abreOutraAbaDoNavegadorComOTitulo(String tituloEsperado) {
         List<String> abas = new ArrayList<>(driver.getWindowHandles());
         String tituloBrowser = driver.switchTo().window(abas.get(1)).getTitle();
-        Assert.assertEquals(tituloEsperado, tituloBrowser );
-
-    }
-
-    @After
-    public void fechaBrowser(){
-        driver.quit();
+        try{
+            Assert.assertEquals(tituloEsperado, tituloBrowser );
+        }finally {
+            driver.quit();
+        }
     }
 }

@@ -1,8 +1,6 @@
 package br.com.challenge.core.steps;
 
 import br.com.challenge.core.pageobjects.LoginPageObject;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import org.junit.Assert;
@@ -32,7 +30,7 @@ public class EsqueceuSenhaSteps {
         String logoTitulo = driver.findElement(By.className("logo-title")).getText();
         try{
             Assert.assertEquals(titulo, logoTitulo);
-        } finally {
+        }finally {
             driver.close();
         }
     }
