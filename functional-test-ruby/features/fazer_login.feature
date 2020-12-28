@@ -12,6 +12,13 @@ Funcionalidade: Fazer Login
     @email_incorreto
     Cenario: Fazer Login com email com uma letra e senha vazia
       Dado que acesso a pagina da aplicação
-      E preencho o campo email
+      E preencho o campo email com a letra A
       Quando eu clico no botão entrar
       Então a mensagem de retorno: Please include an @ in the email address. a is missing an @.
+
+    @email_letraEarroba
+    Cenario: Fazer Login com email com uma letra e @ e campo senha vazio
+      Dado que acesso a pagina da aplicação
+      E preencho o campo email com a letra a@
+      Quando eu clico no botão entrar
+      Então a mensagem de retorno: Please enter a part following @. a@ is incomplete.
