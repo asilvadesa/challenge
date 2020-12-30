@@ -1,3 +1,5 @@
+tamanho_senha = 0
+
 Dado('que desejo acessar a apliacação') do
   visit "https://financeiro.hostgator.com.br/"
   find('#cookie-cta').click
@@ -8,6 +10,7 @@ Dado('que informo o email {string}') do |email|
 end
 
 Dado('que informo senha {string}') do |senha|
+  tamanho_senha = senha.size
   find("#password").set senha
 end
 
@@ -17,9 +20,18 @@ end
 
 Então('a resposta e {string}') do |msg_resposta|
 
-  elemenent = find(".email-input")
-  log elemenent.valid
+  emailValido = execute_script("return arguments[0].checkValidity();", find(".email-input"))
+  senhaValido = execute_script("return arguments[0].checkValidity();", find("#password"))
 
-  message = find(".email-input").native.attribute("validationMessage")
-  expect(message).to eq msg_resposta
+  if emailValido == false
+    message = find(".email-input").native.attribute("validationMessage")
+    expect(message).to eq msg_resposta
+  elsif senhaValido == false && tamanho_senha < 5
+    message = find("#password").native.attribute("validationMessage")
+    expect(message).to eq msg_resposta
+  else
+    message = find(".text-danger").text
+    expect(message).to eq msg_resposta
+  end
+
 end
