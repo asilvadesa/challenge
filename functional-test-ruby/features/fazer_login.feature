@@ -1,24 +1,24 @@
 #language: pt
 Funcionalidade: Fazer Login
-        Como um usuario
-        Gostaria de fazer o login na aplicação
+  Como um usuario
+  Gostaria de fazer o login no aplicação
 
-    @sem_email
-    Cenario: Fazer Login sem email e sem senha
-      Dado que acesso a pagina da aplicação
-      Quando eu clico no botão entrar
-      Então a mensagem de retorno: Please fill out this field.
+  Contexto:
+    Dado que desejo acessar a apliacação
 
-    @email_incorreto
-    Cenario: Fazer Login com email com uma letra e senha vazia
-      Dado que acesso a pagina da aplicação
-      E preencho o campo email com a letra A
-      Quando eu clico no botão entrar
-      Então a mensagem de retorno: Please include an @ in the email address. a is missing an @.
+  Esquema do Cenario: Devo validar regras de login
+    Dado que informo o email "<email>"
+    E que informo senha "<senha>"
+    Quando clico em entrar
+    Então a resposta e "<mensagem>"
 
-    @email_letraEarroba
-    Cenario: Fazer Login com email com uma letra e @ e campo senha vazio
-      Dado que acesso a pagina da aplicação
-      E preencho o campo email com a letra a@
-      Quando eu clico no botão entrar
-      Então a mensagem de retorno: Please enter a part following @. a@ is incomplete.
+    Exemplos:
+      |   email   |      senha      | mensagem                                                                                  |
+      |           |                 | Please fill out this field.                                                               |
+      |    a      |                 | Please include an '@' in the email address. 'a' is missing an '@'.                        |
+      |    a@     |                 | Please enter a part following '@'. 'a@' is incomplete.                                    |
+      |    a@@    |                 | A part following '@' should not contain the symbol '@'.                                   |
+  #    |    a@A    |                 | Please fill out this field.                                                               |
+  #    |    a@A    |      1          | Please lengthen this text to 5 characters or more (you are currently using 1 character).  |
+  #    |    a@A    |      1234       | Please lengthen this text to 5 characters or more (you are currently using 4 characters). |
+  #    |    a@A    |      12345      | Confirme que você não é um robô clicando no reCaptcha abaixo                              |

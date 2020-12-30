@@ -1,31 +1,25 @@
-Dado('que acesso a pagina da aplicação') do
+Dado('que desejo acessar a apliacação') do
   visit "https://financeiro.hostgator.com.br/"
   find('#cookie-cta').click
 end
 
-Quando('eu clico no botão entrar') do
+Dado('que informo o email {string}') do |email|
+  find(".email-input").set email
+end
+
+Dado('que informo senha {string}') do |senha|
+  find("#password").set senha
+end
+
+Quando('clico em entrar') do
   click_button "Entrar"
 end
 
-Então('a mensagem de retorno: Please fill out this field.') do
+Então('a resposta e {string}') do |msg_resposta|
+
+  elemenent = find(".email-input")
+  log elemenent.valid
+
   message = find(".email-input").native.attribute("validationMessage")
-  expect(message).to eq "Please fill out this field."
-end
-
-Dado('preencho o campo email com a letra A') do
-  find(".email-input").set "a"
-end
-
-Então("a mensagem de retorno: Please include an @ in the email address. a is missing an @.") do
-  message = find(".email-input").native.attribute("validationMessage")
-  expect(message).to eq "Please include an '@' in the email address. 'a' is missing an '@'."
-end
-
-Dado('preencho o campo email com a letra a@') do
-  find(".email-input").set "a@"
-end
-
-Então('a mensagem de retorno: Please enter a part following @. a@ is incomplete.') do
-  message = find(".email-input").native.attribute("validationMessage")
-  expect(message).to eq "Please enter a part following '@'. 'a@' is incomplete."
+  expect(message).to eq msg_resposta
 end
