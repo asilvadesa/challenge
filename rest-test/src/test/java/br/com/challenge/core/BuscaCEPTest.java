@@ -15,7 +15,7 @@ public class BuscaCEPTest {
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
         .when()
-                .get("https://financeiro.hostgator.com.br/api/v3/checkout/cep/")
+                .get("https://financeiro.hostgator.com.br/api/v3/checkout/cep/" + "    9")
         .then()
                 .statusCode(405)
                 .body("message", is("Method not allowed. Must be one of: OPTIONS"))
